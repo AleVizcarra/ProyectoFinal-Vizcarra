@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./public/css/main.css" />
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/1e7bc7eb46.js" crossorigin="anonymous"></script>
+
+    <!-- SweetAlert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./public/img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="./public/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./public/img/favicon/favicon-16x16.png">
+
+    <title>Plot Twist Bookstore</title>
+  </head>
+  <body>
+    <!-- ================ Navbar ================= -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <!-- Logo -->
+        <div class="logo-container">
+          <h1>
+            <a href="#" class="logo-link"
+              >Plot
+              <span><img class="logo-icon" src="./public/img/icons/open-book.svg" alt="ícono libro"></span>
+              Twist <span class="bookstore">Bookstore</span></h1></a
+            >
+        </div>
+        <!-- Menu -->
+          <ul class="menu">
+            <li ><a class="menu-link" id="home-link" href="#">Home</a></li>
+            <li ><a class="menu-link" id="acerca-link" href="#acerca-de">Acerca de</a></li>
+            <li ><a class="menu-link" id="top-link" href="#top-ventas">Top ventas</a></li>
+            <li ><a class="menu-link" id="tienda-link" href="#main">Tienda</a></li>
+          </ul>
+        
+        <!-- Carrito -->
+        <div class="cart-btn">
+          <div class="cart-icon">
+            <img id="cart-icon" src="./public/img/icons/simple-cart.svg" alt="ícono carrito de compras">
+          </div>
+          <div class="cart-items">0</div>
+        </div>
+
+        <!-- Menu Icon -->
+        <div class="menu-btn" data-open="false">
+          <div class="menu-icon">
+            <img id="menu-icon" src="./public/img/icons/menu-icon.svg" alt="ícono menú">
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ============= End of Navbar ============= -->
+
+    <!-- ================== Hero ================= -->
+    <header class="hero">
+      <div class="hero-container">
+        <div class="text-container">
+          <h2 class="hero__title">
+            ¿Qué libro estás buscando?
+          </h2>
+          <p class="hero__text">¿No estás seguro qué libro leer ahora? Explora nuestro catálogo y encuentra tu próximo libro</p>
+          <a class="shop-link" href="#main">
+            <p>Comprar</p>
+            <div>
+              <img src="./public/img/icons/arrow.svg" alt="Ícono flecha">
+            </div>
+          </a>
+        </div>
+
+        <div class="images-container">
+          <div class="libro-1"><img src="./public/img/libros/libro18.jpg" alt="Libro El Perfume"></div>
+          <div class="libro-2"><img src="./public/img/libros/libro15.jpg" alt="Libro Anoche en las Trincheras"></div>
+        </div>
+      </div>
+
+      <div class="bottom-decoration">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </header>
+    <!-- ============== End of Hero ============== -->
+
+    <!-- ================= ¿Quienes Somos? ================== -->
+    <section id="acerca-de" class="quienes-somos container">
+      <div>
+        <h2 class="title quienes-somos__title">¿Quienes Somos?</h2>
+        <div class="quienes-somos__info">
+          <div class="acerca-container">
+            <p class="historia">
+              Somos una librería con más de 10 años de historia. Plot Twist Bookstore se fundó en junio de 2007, desde entonces hemos brindado a nuestros clientes diferentes servicios y promociones que enriquecen su experiencia de compra. Adicionalmente facilitamos espacios de expresión, en donde se llevan a cabo diferentes eventos y actividades culturales. Estamos muy orgullosos por lo que hemos hecho, y por eso nos hemos propuesto continuar nuestro crecimiento, en beneficio de la cultura de nuestro país.
+            </p>
+            <div class="mision-vision-container">
+              <div class="mision">
+                <i class="fa-solid fa-book-open"></i>
+                <h3 class="mision-title">Misión</h3>
+                <p>Contribuimos a la difusión de la cultura y el entretenimiento creando experiencias para el encuentro con el conocimiento.</p>
+              </div>
+              <div class="vision">
+                <i class="fa-solid fa-users"></i>
+                <h3 class="vision-title">Visión</h3>
+                <p>Ser el referente del conocimiento y entretenimiento para enriquecer la cultura de las personas, propiciando la transformación de la comunidad a la que servimos.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="historia-img"></div> -->
+          <img class="historia-img square-img" src="./public/img/square-bookstore.jpg" alt="Plot Twist Bookstore">
+          <img class="historia-img vertical-img" src="./public/img/vertical-bookstore.jpg" alt="Plot Twist Bookstore">
+        </div>
+      </div>
+
+    </section>
+    <!-- ============== End of ¿Quienes Somos? ============== -->
+
+
+    <!-- ======= TOP VENTAS ========= -->
+    <section id="top-ventas" class="top-ventas-section">
+      <div class="top-ventas">
+        <h2 class="top-ventas__title">Top Ventas</h2>
+        <div class="top-ventas__container">
+          <div class="top-ventas__buttons">
+            <button data-index="0" aria-selected="true">1</button>
+            <button data-index="1" aria-selected="false">2</button>
+            <button data-index="2" aria-selected="false">3</button>
+            <button data-index="3" aria-selected="false">4</button>
+            <button data-index="4" aria-selected="false">5</button>
+          </div>
+        
+            <div class="top-ventas__info">
+              
+            </div>
+        </div>
+      </div>
+    </section>
+
+
+    <template id="template-top-ventas">
+      <div class="top-book">
+        <h3 class="top-book__title">Mindset</h3>
+        <h4 class="top-book__author">Carol S. Dweck</h4>
+        <div class="sinopsis-container">
+          <h3 class="sinopsis-title">Sinopsis</h3>
+          <p class="top-book__sinopsis">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quisquam, inventore?
+          </p>
+          <button class="top-book__shop-btn" data-id="1">Comprar</button>
+        </div>
+      </div>
+      <img class="top-book__img"
+        src="http://via.placeholder.com/200x300"
+        alt="Titulo del libro"
+      />
+    </template>
+    <!-- ==== END OF TOP VENTAS ===== -->
+
+    <!-- =============== Products ================ -->
+    <main id="main" class="main container">
+      <section class="products">
+        <div class="title-container">
+          <h2 class="title products-title"">Explora nuestros libros</h2>
+          <button id="filter-btn">
+            Filtros
+            <div class="cantidadFiltros">#</div>
+          </button>
+        </div>
+
+        <div class="products-container">
+          <!-- Aquí se agregarán los productos dinámicamente con JS -->
+            <template id="book">
+              <div class="book" data-genre = "genero">
+                <div class="book-img-container">
+                  <img src="./img/libros/libro1.jpg" alt="Harry Potter y el misterio del príncipe" class="book-img">
+                  <button class="shop-btn" data-id="1">Comprar</button>
+                </div>
+                <div class="book-info">
+                  <h3 class="book-title">Harry Potter y el misterio del príncipe</h3>
+                  <h4 class="book-author">J.K Rowling</h4>
+                </div>
+                <div class="prices-container">
+                  <p class="book-previous-price">$429</p>
+                  <p class="book-price">$429</p>
+                </div>
+              </div>
+            </template>
+
+        </div>
+      </section>
+    </main>
+    <!-- ============ End of Products ============ -->
+
+    <!-- ================ Footer ================= -->
+    <footer class="footer">
+      <div class="footer-container">
+        <p>&copy; 2021 All Rigths Reserved, Plot Twist Bookstore</p>
+        <div class="social-icons">
+          <a class="social-link" href="https://es-la.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a class="social-link" href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a class="social-link" href="https://www.instagram.com/?hl=es" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+    <!-- ============= End of Footer ============= -->
+
+    <!-- =============== Carrito ================= -->
+    <div class="overlay">
+      <!-- === MOBILE MENU === -->
+      <div class="off-section mobile-menu-section">
+        <div class="close ">
+          <i class="fas fa-times close-off-section close-mobile-menu"></i>
+        </div>
+        <!-- Menu -->
+        <nav>
+          <ul class="mobile-menu">
+            <li ><a class="mobile-menu-link" href="#">Home</a></li>
+            <li ><a class="mobile-menu-link" href="#acerca-de">Acerca de</a></li>
+            <li ><a class="mobile-menu-link" href="#top-ventas">Top ventas</a></li>
+            <li ><a class="mobile-menu-link" href="#main">Tienda</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- === SECCIÓN CARRITO === -->
+      <div class="off-section cart">
+        <div class="close ">
+          <i class="fas fa-times close-off-section close-cart"></i>
+        </div>
+
+        <h3 class="off-section-title">Tu carrito</h3>
+        <h4 class="mensaje-carrito-vacio">Tu carrito está vacío</h3>
+        <div class="cart-content">
+          <!-- Aquí se agregarán los elementos seleccionados dinámicamente -->
+
+          <!-- Template Item agregado -->
+          <template id = "template-libro-agregado">
+            <div class="cart-item" data-id="1">
+              <!-- Imagen -->
+              <img class="item-img" src="./img/libros/libro1.jpg" alt="Titulo del libro">
+              <!-- Info & remove -->
+              <div class="item-info">
+                <h4 class="item-title">Titulo del Libro</h4>
+                <h5 class="item-author">Autor del libro</h5>
+                <i class="far fa-trash-alt remove-item" data-id="1"></i>
+              </div>
+              <!-- + / - -->
+              <div class="amount-price-container">
+                <div class="amount">
+                  <i class="fas fa-minus-circle" data-id="1"></i>
+                  <p class="item-amount" data-id="1">1</p>
+                  <i class="fas fa-plus-circle" data-id="1"></i>
+                </div>
+
+                <div class="price">
+                  <p class="item-price">precio del libro</p>
+                </div>
+              </div>
+            </div>
+          </template>
+          <!-- Fin template -->
+        </div>
+
+        <div class="cart-footer">
+          <div class="cart-total">
+            <h3 class="total">Total</h3>
+            <h3 class="price">$ 0</h3>
+          </div>
+          <div class="cart-buy">
+            <button class="buy-button">Tramitar pedido</button>
+          </div>
+        </div>
+      </div>
+      <!-- ============= End of Carrito ============ -->
+
+
+      <!-- ============ Filter Selection =========== -->
+      <div class="off-section filter">
+        <div class="close">
+          <i class="fas fa-times close-off-section close-filter"></i>
+        </div>
+
+        <h3 class="off-section-title">Géneros</h3>
+
+        <div class="filter-content">
+          <!-- Template botón género -->
+          <template id = 'genre'>
+            <button class="genre-btn">
+              <p class="genre-btn-text">Romance</p>
+              <div class="remove-filter">
+                <i class="fas fa-times remove-filter-btn"></i>
+              </div>
+            </button>
+          </template>
+
+          <div class="filter-buttons">
+            <button class="apply-filter-btn">Filtrar</button>
+            <button class="clear-filter-btn">Limpiar Filtros</button>
+          </div>
+        </div>
+
+        </div>
+      <!-- ========== End Filter Selection ========= -->
+    </div>
+
+    <!-- ============= JS ============= -->
+    <script type="module" src="./app/main.js"></script>
+    <script type="module" src="./app/components/menu/menu.js"></script>
+    <script type="module" src="./app/components/utils/interfaz.js"></script>
+    <script type="module" src="./app/components/filtro/filtro.js"></script>
+    <script type="module" src="./app/components/carrito/carrito.js"></script>
+    <script type="module" src="./app/components/topVentas/topVentas.js"></script>
+  </body>
+</html>
