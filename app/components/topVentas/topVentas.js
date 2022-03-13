@@ -18,14 +18,14 @@ topVentasSection.addEventListener('click', (e) => {
     if(e.target.classList.contains('top-book__shop-btn')) {
         actualizarCarrito(e);
     };
-})
+});
 
 const seleccionarBoton = (e) => {
     const indexButton = e.target.dataset.index;
     topButtons.forEach((button) => {
         button.dataset.index === indexButton ? button.ariaSelected = 'true' : button.ariaSelected = 'false';
     });
-}
+};
 
 export const mostrarTopVentas = () => {
     topVentasInfo.innerHTML = '';
@@ -47,4 +47,4 @@ export const mostrarTopVentas = () => {
     
     fragment.appendChild(clone);
     topVentasInfo.appendChild(fragment);
-}
+};

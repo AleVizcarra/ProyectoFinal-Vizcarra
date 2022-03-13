@@ -21,4 +21,3 @@ overlay.addEventListener('click', (e) => {
     (e.target.classList.contains('overlay') && seccionCarrito.classList.contains('show-off-section')) && ocultarSeccion (overlay, seccionCarrito);
     (e.target.classList.contains('overlay') && mobileMenu.classList.contains('show-off-section')) && ocultarSeccion (overlay, mobileMenu);
 });
-

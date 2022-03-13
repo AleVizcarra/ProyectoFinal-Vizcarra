@@ -16,4 +16,3 @@ export const pintarGeneros = (stockLibros) => {
     });
     filterContent.insertBefore(fragment, filterButtons);
 };
-

@@ -45,7 +45,6 @@ btnPagar.addEventListener('click', () => {
     tramitarPedido();
 });
 
-
 // Función para agregar al carrito/aumentar la cantidad
 export const actualizarCarrito = (e) => {
     carrito = verificarLS();
@@ -84,7 +83,6 @@ export const actualizarCarrito = (e) => {
         })
     );
 };
-
 
 // Aumentar / Disminuir cantidades de libros en carrito o eliminarlos
 const actualizarItemsCarrito = (e, idLibro, carrito) => {

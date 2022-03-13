@@ -11,7 +11,6 @@ const mobileMenu = document.querySelector('.mobile-menu-section');
 const closeMobileMenuBtn = document.querySelector('.close-mobile-menu');
 const mediaQuery = window.matchMedia('(min-width: 872px)');
 
-
 window.addEventListener('scroll', () => {
     activarLink();
 });
@@ -24,7 +23,6 @@ closeMobileMenuBtn.addEventListener('click', () => {
     ocultarSeccion(overlay, mobileMenu);
 });
 
-
 mediaQuery.addEventListener('change', () => {
     if(mediaQuery.matches) {
         ocultarSeccion(overlay, mobileMenu);
@@ -33,7 +31,7 @@ mediaQuery.addEventListener('change', () => {
 
 mobileMenu.addEventListener('click', (e) => {
     e.target.classList.contains('mobile-menu-link') && ocultarSeccion(overlay, mobileMenu);
-})
+});
 
 export const activarLink = () => {
     if(window.innerHeight < 450) {
@@ -71,8 +69,7 @@ export const activarLink = () => {
             aplicarClaseActiva('tienda-link', tiendaLink);
         }
     } 
-}
-
+};
 
 const aplicarClaseActiva = (idLink, selectedLink) => {
     menuLinks.forEach((link) => {
@@ -81,6 +78,5 @@ const aplicarClaseActiva = (idLink, selectedLink) => {
         );
     });
 };
-
 
 export { mobileMenu }

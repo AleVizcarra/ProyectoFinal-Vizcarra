@@ -17,7 +17,6 @@ let btnsGenerosSeleccionados = [];
 let cantidadFiltros;
 let btnConClaseSG
 
-
 // Mostrar Filtro
 filtrosBtn.addEventListener('click', () => {
     mostrarSeccion(overlay, seccionFiltro);
@@ -52,8 +51,7 @@ btnAplicarFiltro.addEventListener('click', () => {
 // Limpiar filtros
 btnLimpiarFiltros.addEventListener('click', () => {
     limpiarFiltros(cantidadFiltros);
-})
-
+});
 
 // ================= FUNCIONES ========================
 // Asignar estilo de botón seleccionado a los géneros
@@ -67,7 +65,6 @@ const deseleccionarGenerosDOM = (btnGenero) => {
     btnGenero.classList.replace('selected-genre-btn', 'genre-btn');
     btnGenero.querySelector('.remove-filter').style.display = 'none';
 };
-
 
 const guardarGeneros = () => {
     btnsGenerosSeleccionados = [];
@@ -105,7 +102,7 @@ const modificarContadorFiltros = (cantidadFiltros) => {
         filtrosBtn.style.justifyContent = 'space-between',
         contadorFiltros.textContent = cantidadFiltros
     );
-}
+};
 
 // Función para mostrar todos los libros y quitar el contador de filtros
 const removerFiltros = () => {
@@ -113,7 +110,7 @@ const removerFiltros = () => {
         card.style.display = 'flex';
     });
     modificarContadorFiltros(cantidadFiltros);
-}
+};
 
 const limpiarFiltros = () => {
     btnsGenerosSeleccionados = [];
@@ -141,5 +138,3 @@ const evaluarGeneros = () => {
         (!btnsGenerosSeleccionados.includes(btn)) && deseleccionarGenerosDOM(btn);
     });
 };
-
-
